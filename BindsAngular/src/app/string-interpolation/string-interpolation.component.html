@@ -1,0 +1,27 @@
+<!-- <div class="container" style="max-width: 50%;"> -->
+<mat-card class="myImage">
+
+    <mat-card-header>
+        <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-title> Component de título </mat-card-title>
+        <mat-card-subtitle> Comp de subtítulo {{ NomeQualquer }}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p> <strong>Nome: </strong>{{sujeito.nome}} </p>
+      <p> <strong>sobrenome:</strong>{{sujeito.sobrenome}} </p>
+      <p> <strong>Idade: </strong>{{sujeito.idade}} </p>
+      <p> <strong> Endereço: </strong>{{ sujeito.endereco }}</p>
+        <form>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Nome do sujeito" value="{{sujeito.nome}}">
+                </mat-form-field>
+        </form>
+          
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+<!-- </div> -->
