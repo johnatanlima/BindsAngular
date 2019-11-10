@@ -1,6 +1,21 @@
-<p>event-binding works!</p>
+<h2>event-binding works!</h2>
 
 <section>
-    <button mat-flat-button color="primary" (click)="save()"> Save </button> <br/>
     <button mat-flat-button color="warn" (click)="inc()"> {{ buttonName }}</button>
+</section>
+
+<section>
+    <button mat-flat-button color="accent" [disabled]="!btnEnable"> Button 1</button>
+    <button mat-flat-button color="accent" [disabled]="!btnEnable"> Button 2 </button>
+    
+    <button mat-flat-button 
+        color="warn" 
+        (click)="disable"> Desativar buttons 
+    </button>
+
+    <mat-spinner
+        color="warn"
+        [mode]="spinnerMode"
+        value="0">
+    </mat-spinner>
 </section>
