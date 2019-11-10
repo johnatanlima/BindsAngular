@@ -7,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  
+  color: string ="accent";
+  btnDisable = false;
+
+  colors = ['primary', 'accent', 'warn',''];
+  idx = 0;
+
   constructor() { }
 
   ngOnInit() {
+    setInterval(() => {
+      this.idx = (this.idx + 1) % this.colors.length; 
+    }, 1000);
   }
 
 }
