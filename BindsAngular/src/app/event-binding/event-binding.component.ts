@@ -49,4 +49,9 @@ export class EventBindingComponent implements OnInit {
   selectionChange(event){
       this.selectedOption = event.value;
   }
+
+  //Fazendo two way data binding
+  inputName = "johw";
+
+  
 }

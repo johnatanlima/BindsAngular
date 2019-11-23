@@ -10,17 +10,22 @@ import {MatInputModule} from '@angular/material/input';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
-import {MatSelectModule} from '@angular/material/select'; 
+import {MatFormFieldModule} from '@angular/material/form-field';  
+
+
+import {MatSelectModule} from '@angular/material/select';
+import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayDatabindingComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatSelectModule,
+    MatFormFieldModule
   ],
 
   providers: [],

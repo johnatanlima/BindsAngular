@@ -52,3 +52,25 @@
         </mat-card>
     </p>
 </section>
+
+<hr />
+
+<section>
+    <p>
+        <mat-card>
+        <mat-card-header>
+            <h4> select nativo para estudo </h4>
+        </mat-card-header>
+        <mat-card-content>    
+            <mat-form-field>
+                <input matInput placeholder="Entre com texto" 
+                    (input)="inputName = $event.target.value"
+                    [value]="inputName">
+              </mat-form-field>
+         </mat-card-content>
+        <mat-card-actions>
+            <p> Mudando de forma dinamica - two way data binding</p>
+        </mat-card-actions>
+        </mat-card>
+    </p>
+</section>
