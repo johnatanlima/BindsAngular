@@ -11,5 +11,8 @@ export class TwoWayDatabindingComponent implements OnInit {
 
   ngOnInit() {
   }
+  name1: string = "";
+  name2: string = "";
 
+  
 }

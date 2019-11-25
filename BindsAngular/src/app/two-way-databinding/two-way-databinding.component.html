@@ -1,1 +1,30 @@
 <p>two-way-databinding works!</p>
+<hr>
+
+<section>
+    <p>
+        <mat-card style="margin: 25px;">
+        <mat-card-header>
+            <h4> Trampando com two-way-databinding </h4>
+        </mat-card-header>
+        <mat-card-content>    
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Entre com texto" 
+                    [(ngModel)]="var1"
+                    name="anyname1">
+              </mat-form-field>
+              <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Entre com texto" 
+                [(ngModel)]="var2" name="anyname2">
+              </mat-form-field>
+         </mat-card-content>
+        <mat-card-actions>
+            <p> Mudando de forma dinamica - two way data binding</p>
+            <p> {{ var1 }}</p>
+            <p> {{ var2 }}</p>
+            
+        </mat-card-actions>
+        </mat-card>
+    </p>
+</section>
+

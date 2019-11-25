@@ -52,6 +52,6 @@ export class EventBindingComponent implements OnInit {
 
   //Fazendo two way data binding
   inputName = "johw";
-
+  
   
 }

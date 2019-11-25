@@ -11,13 +11,10 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
-
 import {MatFormFieldModule} from '@angular/material/form-field';  
-
-
 import {MatSelectModule} from '@angular/material/select';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component'; 
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +33,8 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule 
   ],
 
   providers: [],
